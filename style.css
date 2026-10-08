@@ -1,12 +1,11 @@
 /* STREAMING_CHUNK:Styling photo slider component with arrows */
 .slider-container {
 position: relative;
-width: 320px;
-max-width: 100%;
-margin: 20px 0;
+width: 100%;
+margin: 0;
 border: 1px solid #ccc;
 background: #f9f9f9;
-padding: 10px;
+padding: 0;
 }
 
 .slider {
