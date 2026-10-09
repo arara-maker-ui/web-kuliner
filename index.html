@@ -95,12 +95,11 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
                 </div>
             </div>
 
-            <!-- Tombol Navigasi Kiri & Kanan -->
             <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
             <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
         </div>
 
-        <!-- Script untuk Slider Otomatis & Tombol Klik -->
+       
         <script>
             let currentSlide = 0;
             const slider = document.getElementById('imageSlider');
@@ -114,12 +113,10 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
                 });
             }
 
-            // Slider otomatis berjalan setiap 3 detik
             let autoSlide = setInterval(() => {
                 moveSlide(1);
             }, 3000);
 
-            // Berhenti otomatis saat mouse berada di atas slider
             slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
             slider.addEventListener('mouseleave', () => {
                 autoSlide = setInterval(() => {
