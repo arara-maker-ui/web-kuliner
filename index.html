@@ -8,22 +8,25 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Jelajah Rasa</h1>
         <p><i>Memperkenalkan & Mempromosikan Kuliner Khas Nusantara</i></p>
-        <hr>    
-        <nav>
+        <hr>
+        <!-- Menu Navigasi menggunakan Link -->
+        <nav class="navbar">
             <a href="#beranda">Beranda</a> | 
             <a href="#resep">Resep</a> | 
             <a href="#lokasi">Lokasi</a> | 
-            <a href="#form">Form</a> |
-            <a href="#tentang">Tentang Kami</a> | 
+            <a href="#tentang">Tentang</a> | 
+            <a href="#kontak">Kontak</a>
         </nav>
         <hr>
     </header>
 
+        <hr>
+
     <section id="beranda">
-        <h2>Selamat Datang di Jelajah Rasa</h2>
+        <h2 style="text-align: center;">Selamat Datang di Jelajah Rasa</h2>
         <p><b>Menyelamatkan Cita Rasa Legendaris Nusantara</b> dengan <b>Menjelajah Kenangan Melalui Cita Rasa Masa Lalu</b></p>
         <p>Pernahkah kamu mencicipi kuliner asli daerah yang kini sulit dicari? Kami mengajakmu bertualang mengenal kembali deretan makanan khas Indonesia yang hampir punah, menjaga resep warisan leluhur agar tetap hidup di lidah generasi mendatang.
 
@@ -31,21 +34,78 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
 </p>
     </section>
 
-    <section>
-        <h3>Daftar Makanan Tradisional Rare / Langka</h3>
-        <ul>
-            <li>1. Grontol</li>
-            <li>2. Clorot</li>
-            <li>3. Dodongkal</li>
-            <li>4. Lomppong Sagu</li>
-            <li>5. Kue Rangin</li>
-            <li>6. Sayur Babanci</li>
-            <li>7. Gulo Puan</li>
-            <li>8. Bassang</li>
-            <li>9. Mie Lethek</li>
-            <li>10. Kue Putu</li>
-        </ul>
+    <section id="resep">
+        <div class="food-section">
+            <div class="food-heading">
+                <div>
+                    <p class="food-eyebrow">Warisan yang perlu dikenal</p>
+                    <h2>10 Makanan Tradisional Nusantara</h2>
+                </div>
+                <p class="food-intro">Kuliner tradisional pilihan yang layak terus dikenal dan diperkenalkan.</p>
+            </div>
+
+            <div class="food-list">
+                <button class="food-card" type="button" data-name="Grontol" data-origin="Betawi" data-description="Grontol adalah jajanan pasar khas Jawa Tengah berupa pipilan jagung rebus gurih yang disajikan dengan taburan kelapa parut dan gula pasir. Menariknya,hidangan sederhana ini dulu pernah menjadi makanan pokok pengganti beras bagi masyarakat pedesaan Jawa saat masa paceklik pasca-kemerdekaan.">
+                    <span class="food-number">01</span>
+                    <span class="food-info"><strong>Grontol</strong><small>Betawi</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Clorot" data-origin="Purworejo, Jawa Tengah" data-description="Kue basah khas Purworejo ini terbuat dari adonan tepung beras, santan, dan gula merah yang dikukus di dalam gulungan daun kelapa muda berbentuk kerucut. Uniknya, cara makan clorot bukan mengupas dari atas, melainkan menekan bagian bawah kerucutnya menggunakan jempol sampai kuenya terdorong keluar.">
+                    <span class="food-number">02</span>
+                    <span class="food-info"><strong>Clorot</strong><small>Purworejo, Jawa Tengah</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Dodongkal" data-origin="Jawa Barat" data-description="Dodongkal atau dongkal adalah kuliner tradisional Sunda berbahan dasar tepung beras dan selipan gula merah yang dikukus dalam wadah anyaman bambu berbentuk tumpeng bernama asepan . Meski rasanya mirip kue putu atau awug, cara pengukusan tradisional inilah yang bikin aroma dan teksturnya khas banget.">
+                    <span class="food-number">03</span>
+                    <span class="food-info"><strong>Dodongkal</strong><small>Jawa Barat</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Lompong Sagu" data-origin="Sumatera Barat" data-description="Lompong sagu merupakan kue khas Minangkabau yang dibuat dari campuran sagu, pisang raja, parutan kelapa, serta gula merah yang dibungkus daun pisang lalu dipanggang di atas arang.Kuliner aromatik yang manis ini semakin istimewa karena keberadaannya mulai sangat langka dan sulit ditemui di pasar tradisional.">
+                    <span class="food-number">04</span>
+                    <span class="food-info"><strong>Lompong Sagu</strong><small>Sumatera Barat</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Kue Rangin" data-origin="Betawi, Jakarta" data-description="Kue legendaris berbahan dasar tepung beras, parutan kelapa, dan santan ini dicetak dalam panggangan setengah lingkaran yang membuat bagian luarnya renyah namun lembut di dalamnya. Asyiknya lagi, kue ini punya nama yang berbeda-beda di setiap daerah, seperti rangin di Jawa Timur, gandos di Jawa Tengah, dan pancong di Jakarta.">
+                    <span class="food-number">05</span>
+                    <span class="food-info"><strong>Kue Rangin</strong><small>Betawi, Jakarta</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Sayur Babanci" data-origin="Betawi, Jakarta" data-description="Kuliner khas Betawi ini berupa olahan daging sapi dan kelapa muda berkuah gurih kaya rempah yang dipadukan hingga 21 jenis bumbu tradisional.Dinamaibabancikarena rasanya yang unik dan tak menuntu—antara soto,merah,dan kare—serta kini tergolong sangat langka karena rempah aslinya mulai sulit ditemukan.">
+                    <span class="food-number">06</span>
+                    <span class="food-info"><strong>Sayur Babanci</strong><small>Betawi, Jakarta</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Gulo Puan" data-origin="Palembang, Sumatera Selatan" data-description="Gulo puan adalah kudapan manis istimewa khas Palembang yang terbuat dari olahan susu kerbau rawa dan gula merah yang dimasak perlahan hingga karamelisasi.Di masa Kesultanan Palembang,sajian bertekstur lembut mirip karamel ini tergolong sangat mewah dan hanya dipersembahkan sebagai upeti untuk para raja dan bangsawan.">
+                    <span class="food-number">07</span>
+                    <span class="food-info"><strong>Gulo Puan</strong><small>Palembang, Sumatera Selatan</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Bassang" data-origin="Makassar, Sulawesi Selatan" data-description="Bassang merupakan bubur manis khas Makassar yang diolah dari jagung pulut putih dan dimasak lama bersama santan hingga teksturnya kental dan lembut.Namabassangsendiri diambil dari katabassiyang berarti kenyang,karena sajian ini dulunya memang sering dijadikan sarapan padat energi oleh masyarakat lokal.">
+                    <span class="food-number">08</span>
+                    <span class="food-info"><strong>Bassang</strong><small>Makassar, Sulawesi Selatan</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Mie Lethek" data-origin="Bantul, DI Yogyakarta" data-description="Mie khas Bantul,Yogyakarta ini terbuat dari campuran tepung tapioka dan gaplek (singkong kering) yang diolah secara tradisional tanpa pewarna buatan.Namalethekyang berarti "kusam" dalam bahasa Jawa berasal dari warna mienya yang kecokelatan alami karena diproses murni tanpa pemutih kimia.">
+                    <span class="food-number">09</span>
+                    <span class="food-info"><strong>Mie Lethek</strong><small>Bantul, DI Yogyakarta</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="food-card" type="button" data-name="Kue Putu" data-origin="Jawa" data-description="Kue kukus beraroma pandan dari tepung beras dengan isian gula merah cair ini dicetak di dalam tabung-tabung bambu kecil dan disajikan bersama taburan kelapa parut.Suara siulan nyaring khas yang berasal dari uap panas alat pengukus bambunya selalu berhasil bikin siapa saja nostalgia saat mendengar dari perjumpaan.">
+                    <span class="food-number">10</span>
+                    <span class="food-info"><strong>Kue Putu</strong><small>Jawa</small></span>
+                    <span class="food-arrow" aria-hidden="true">↗</span>
+                </button>
+            </div>
+        </div>
     </section>
+
+    <dialog class="food-modal" id="foodModal" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" aria-label="Tutup pop-out">&times;</button>
+        <p class="food-eyebrow">Deskripsi</p>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-origin"></p>
+        <p class="modal-description"></p>
+    </dialog>
 
     <section>
         <h3>Dokumentasi Kuliner</h3>
@@ -95,11 +155,12 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
                 </div>
             </div>
 
+            <!-- Tombol Navigasi Kiri & Kanan -->
             <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
             <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
         </div>
 
-       
+        <!-- Script untuk Slider Otomatis & Tombol Klik -->
         <script>
             let currentSlide = 0;
             const slider = document.getElementById('imageSlider');
@@ -113,10 +174,12 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
                 });
             }
 
+            // Slider otomatis berjalan setiap 3 detik
             let autoSlide = setInterval(() => {
                 moveSlide(1);
             }, 3000);
 
+            // Berhenti otomatis saat mouse berada di atas slider
             slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
             slider.addEventListener('mouseleave', () => {
                 autoSlide = setInterval(() => {
@@ -126,9 +189,7 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
         </script>
     </section>
 
-    <hr>
-
-    <section id="resep">
+    <section>
         <h3>Tabel Resep Praktis Jajanan Jadul</h3>
         <table border="1" cellpadding="8" cellspacing="0">
             <thead>
@@ -205,8 +266,28 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
     </section>
 
     <hr>
-  
-    <section id="form">
+
+     <section
+    id="lokasi">
+            <h3>Lokasi Penjual Makanan Tradisional</h3>
+            <p>Berikut adalah beberapa lokasi penjual makanan tradisional yang bisa kamu kunjungi:</p>
+            
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+grontol+Betawi" target="_blank" rel="noopener noreferrer"><li>1. Grontol - Pasar Tradisional di Jawa</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+clorot+Semarang" target="_blank" rel="noopener noreferrer"><li>2. Clorot - Kota Semarang, Jawa Tengah</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+dodongkal+Bandung" target="_blank" rel="noopener noreferrer"><li>3. Dodongkal - Bandung, Jawa Barat</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+lomppong+sagu+Ambon" target="_blank" rel="noopener noreferrer"><li>4. Lomppong Sagu - Ambon, Maluku</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+kue+rangin+Jakarta" target="_blank" rel="noopener noreferrer"><li>5. Kue Rangin - Jakarta Pusat, DKI Jakarta</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual=sayur+babanci+Jakarta" target="_blank" rel="noopener noreferrer"><li>6. Sayur Babanci - Jakarta Selatan, DKI Jakarta</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+gulo+puan+Palembang" target="_blank" rel="noopener noreferrer"><li>7. Gulo Puan - Palembang, Sumatera Selatan</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+bassang+Makassar" target="_blank" rel="noopener noreferrer"><li>8. Bassang - Makassar, Sulawesi Selatan</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+mie+lethek+Bantul" target="_blank" rel="noopener noreferrer"><li>9. Mie Lethek - Bantul, Yogyakarta</li></a>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=penjual+kue+putu+Surabaya" target="_blank" rel="noopener noreferrer"><li>10. Kue Putu - Surabaya, Jawa Timur</li></a>
+     </section>       
+
+
+    <hr>
+
+    <section id="kontak">
         <h3>Rekomendasikan Makanan Daerahmu</h3>
         <form action="#" method="POST">
             <p>
@@ -219,7 +300,7 @@ Dari wangi gurih kelapa parut hingga manisnya gula aren yang lumer di mulut, jaj
                 <input type="text" id="makanan" name="makanan" placeholder="Contoh: Kue Rangi">
             </p>
 
-            <p>
+             <p>
                 <p>Pilih Jenis Kuliner:</p>
             <label>
                 <input type="radio" name="jenis" value="Makanan"> Makanan
@@ -297,5 +378,29 @@ Mulai dari jajanan pasar legendaris tempat kita menghabiskan uang saku sekolah, 
         <p><small>&copy; 2026 Jelajah Rasa - Proyek Website Syakira Kelas XII-B1</small></p>
     </footer>
 
+    <script>
+        const foodModal = document.getElementById("foodModal");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalOrigin = document.querySelector(".modal-origin");
+        const modalDescription = document.querySelector(".modal-description");
+        const closeModalButton = document.querySelector(".modal-close");
+
+        document.querySelectorAll(".food-card").forEach((card) => {
+            card.addEventListener("click", () => {
+                modalTitle.textContent = card.dataset.name;
+                modalOrigin.textContent = `Asal daerah: ${card.dataset.origin}`;
+                modalDescription.textContent = card.dataset.description;
+                foodModal.showModal();
+            });
+        });
+
+        closeModalButton.addEventListener("click", () => foodModal.close());
+
+        foodModal.addEventListener("click", (event) => {
+            if (event.target === foodModal) {
+                foodModal.close();
+            }
+        });
+    </script>
 </body>
 </html>
