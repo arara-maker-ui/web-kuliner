@@ -1,78 +1,80 @@
+/* Mengatur kotak luar yang membungkus slider foto dan tombol panah. */
 .slider-container {
-position: relative;
-width: 100%;
-margin: 0;
-border: 1px solid #ccc;
-background: #f9f9f9;
-padding: 0;
+position: relative; /* Menjadi patokan posisi tombol di dalam kotak ini. */
+width: 100%; /* Membuat kotak selebar area yang tersedia. */
+max-width: 100; /* Batas lebar maksimum; nilai ini belum valid karena tidak memiliki satuan. */
+margin: 20px 0; /* Memberi jarak 20px di atas dan bawah, tanpa jarak kiri-kanan. */
+border: 1px solid #ccc; /* Memberi garis tepi abu-abu setebal 1px. */
+background: #f9f9f9; /* Memberi warna latar abu-abu sangat muda. */
+padding: 10px; /* Memberi jarak antara isi kotak dan garis tepinya. */
 }
 
 .slider {
-display: flex;
-aspect-ratio: 16 / 9;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-scroll-behavior: smooth;
-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+display: flex; /* Menyusun foto-foto secara berjajar. */
+aspect-ratio: 16 / 9; /* Mengatur perbandingan lebar dan tinggi seperti layar widescreen. */
+overflow-x: auto; /* Mengizinkan isi slider digeser ke kiri atau kanan. */
+scroll-snap-type: x mandatory; /* Membuat guliran berhenti pas pada satu foto. */
+scroll-behavior: smooth; /* Membuat perpindahan guliran terasa halus. */
+box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Memberi bayangan tipis di sekitar slider. */
 }
 
 .slider::-webkit-scrollbar {
-display: none;
+display: none; /* Menyembunyikan scrollbar di browser berbasis WebKit, seperti Chrome. */
 }
 
 .slider {
--ms-overflow-style: none;
-scrollbar-width: none;
+-ms-overflow-style: none; /* Menyembunyikan scrollbar di browser Microsoft lama. */
+scrollbar-width: none; /* Menyembunyikan scrollbar di Firefox. */
 }
 
 .slide {
-flex: 0 0 100%;
-scroll-snap-align: start;
-position: relative;
-background: #eee;
-text-align: center;
+flex: 0 0 100%; /* Membuat setiap foto selebar area slider. */
+scroll-snap-align: start; /* Membuat guliran berhenti di awal foto. */
+position: relative; /* Menjadi patokan posisi caption di dalam foto. */
+background: #eee; /* Memberi latar abu-abu muda. */
+text-align: center; /* Membuat teks di dalam slide rata tengah. */
 }
 
 .slide img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+width: 100%; /* Membuat gambar memenuhi lebar slide. */
+height: 100%; /* Membuat gambar memenuhi tinggi slide. */
+object-fit: cover; /* Memenuhi area tanpa merusak bentuk gambar; sebagian gambar bisa terpotong. */
 }
 
 .slide-caption {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background: rgba(0, 0, 0, 0.6);
-color: white;
-margin: 0;
-padding: 5px;
-font-size: 14px;
+position: absolute; /* Membolehkan caption ditempatkan di posisi tertentu pada slide. */
+bottom: 0; /* Menempelkan caption ke bagian bawah slide. */
+left: 0; /* Memulai caption dari sisi kiri slide. */
+right: 0; /* Membuat caption membentang sampai sisi kanan slide. */
+background: rgba(0, 0, 0, 0.6); /* Memberi latar hitam transparan. */
+color: white; /* Membuat teks caption berwarna putih. */
+margin: 0; /* Menghapus jarak luar bawaan paragraf. */
+padding: 5px; /* Memberi ruang di sekeliling teks caption. */
+font-size: 14px; /* Mengatur ukuran teks caption. */
 }
 
 .slider-btn {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background: rgba(0, 0, 0, 0.5);
-color: white;
-border: none;
-padding: 8px 12px;
-cursor: pointer;
-font-size: 14px;
-border-radius: 3px;
-z-index: 10;
+position: absolute; /* Memungkinkan tombol diletakkan di atas slider. */
+top: 50%; /* Menempatkan tombol di sekitar tengah tinggi slider. */
+transform: translateY(-50%); /* Menggeser tombol agar tepat di tengah secara vertikal. */
+background: rgba(0, 0, 0, 0.5); /* Memberi tombol latar hitam transparan. */
+color: white; /* Membuat ikon atau teks tombol berwarna putih. */
+border: none; /* Menghilangkan garis tepi bawaan tombol. */
+padding: 8px 12px; /* Memberi ruang di dalam tombol: 8px atas-bawah, 12px kiri-kanan. */
+cursor: pointer; /* Mengubah kursor menjadi tangan saat tombol diarahkan. */
+font-size: 14px; /* Mengatur ukuran ikon atau teks tombol. */
+border-radius: 3px; /* Membuat sudut tombol sedikit membulat. */
+z-index: 10; /* Membuat tombol berada di atas gambar. */
 }
 
 .slider-btn:hover {
-background: rgba(0, 0, 0, 0.8);
+background: rgba(0, 0, 0, 0.8); /* Menggelapkan tombol saat kursor berada di atasnya. */
 }
 
 .prev-btn {
-left: 15px;
+left: 15px; /* Menempatkan tombol foto sebelumnya 15px dari sisi kiri. */
 }
 
 .next-btn {
-right: 15px;
+right: 15px; /* Menempatkan tombol foto berikutnya 15px dari sisi kanan. */
 }
